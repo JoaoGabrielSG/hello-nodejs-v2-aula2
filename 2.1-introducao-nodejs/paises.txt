@@ -1,3 +1,6 @@
 brasil
 chile
 holanda
+uruguai
+alemanha
+italia

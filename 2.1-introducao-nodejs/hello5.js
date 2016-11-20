@@ -15,24 +15,19 @@ function leiaNome(count, pasta){
 }
 
 function leiaPais(count, pasta){
-  console.log(pasta);
   if (count--) {
     rl.question('Digite o nome de um país \n', (pais) =>{
       paises.push(pais);
-      console.log(count);
       leiaPais(count, pasta);
     });
   }else{
-    console.log("oi");
     gravaArquivo(pasta);
   }
 }
 
 function gravaArquivo(pasta){
   var print = pasta + '.txt';
-  console.log(print);
   for (var i in paises) {
-    console.log("tchau");
     fs.appendFile(pasta + '.txt',paises[i]+"\n");
   }
   rl.close();
