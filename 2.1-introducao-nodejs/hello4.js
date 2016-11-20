@@ -9,7 +9,7 @@ var nomes = [];
 
 function leianome(count){
   if(count--){
-    rl.question("Digite um nome:\n",(line) => {
+    rl.question('Digite um nome:\n',(line) => {
       nomes.push(line);
       leianome(count);
     });
